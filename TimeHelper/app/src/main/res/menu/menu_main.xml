@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="搜索"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/menu_all"
+        android:title="全部任务"
+        android:orderInCategory="1">
+    </item>
+
+    <item
+        android:id="@+id/menu_today"
+        android:title="今日任务"
+        android:orderInCategory="2"
+        >
+    </item>
+
+    <item
+        android:id="@+id/menu_star"
+        android:title="重要任务"
+        android:orderInCategory="3"
+        >
+    </item>
+
+</menu>

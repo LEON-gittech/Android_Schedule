@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_edit"
+            android:text="编辑"
+            style="@style/MyTextStyle"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_check_box_24"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_done"
+            android:text="完成"
+            android:gravity="center"
+            style="@style/MyTextStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_star"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_star_24"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_star"
+            android:text="重要"
+            style="@style/MyTextStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_do"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_do_24"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_do"
+            android:text="专注"
+            style="@style/MyTextStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_delete"
+            android:text="删除"
+            style="@style/MyTextStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".data.TimeDataFragment" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/data_time_toolbar"
+            android:background="#d896f6"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Data"
+            app:titleTextColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <include
+                layout="@layout/data_nav_layout"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/data_background2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="累计专注时长"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="#cdffffff"
+                android:textStyle="bold"
+                android:textSize="16sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_times_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#CDFFFFFF"
+                android:textStyle="bold"
+                android:textSize="38sp">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/data_background">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="今日专注时长"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textColor="#cdffffff"
+                android:textStyle="bold"
+                android:textSize="16sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_today_times"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#CDFFFFFF"
+                android:textStyle="bold"
+                android:textSize="38sp">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/data_trend_background">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:text="每日专注时长趋势"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="15dp"
+                android:text="展示了近一周的专注时长趋势"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/chart3"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </lecho.lib.hellocharts.view.LineChartView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

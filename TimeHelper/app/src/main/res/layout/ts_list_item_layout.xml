@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:id="@+id/rl_item_container"
+    android:background="@drawable/todo_background"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_timer_do"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_do_24" />
+
+    <TextView
+        android:id="@+id/tv_timer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_timer_do"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:maxLines="1"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_timer_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_timer_title"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="16sp" />
+
+</RelativeLayout>

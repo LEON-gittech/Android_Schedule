@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_calendar_date"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:layout_width="48dp"
+    android:layout_height="62dp">
+
+    <ImageView
+        android:id="@+id/ddl_state"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/selector_img_done"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#d896f6"
+        android:text="text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

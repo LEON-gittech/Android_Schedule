@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".todo.AddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@drawable/todo_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="任务标题"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/et_title"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:layout_marginStart="16dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_stime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="开始日期"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_stime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/data_trend_background"
+                    android:padding="8dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_etime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="结束日期"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_etime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/data_trend_background"
+                    android:padding="8dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/todo_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="任务详情"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="10dp"
+                android:gravity="start"
+                android:background="@drawable/data_trend_background"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                style="@style/MyBtnStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="add"
+                android:textStyle="bold"
+                android:text="添加任务"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
